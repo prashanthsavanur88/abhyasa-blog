@@ -1,0 +1,7 @@
+<div class="buttons">
+<a class="anchor normal" href="view.php?id=<?php echo $permalink; ?>">edit</a>
+<?php if ($type=='project') { ?>
+ <a class="anchor danger" href="delete.php?id=<?php echo $permalink ?>&tbl=posts&file=2&back=list&backid=posts">delete </a>   <?php }else { ?>
+	 <a class="anchor danger" href="delete.php?id=<?php echo $permalink ?>&tbl=posts&file=1&back=list&backid=posts">delete</a>
+		<?php } ?>
+</div>
